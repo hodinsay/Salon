@@ -1,0 +1,413 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+li, a, button{
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item{
+  margin-left: 3rem;
+}
+
+.nav-link{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: black;
+}
+
+.nav-logo{
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: italic;
+  color: black;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.main{
+  background-image: url(https://pbs.twimg.com/media/FLUCUd6XECMYEQm?format=jpg&name=4096x4096);
+  background-size: cover;
+  height: 800px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+main > section > h1{
+  color: white;
+  font-size: 100px;
+}
+
+main > section > p{
+  color: white;
+  padding: 20px 0;
+}
+
+.service{
+  background-color: black;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+.discount{
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  width: 225px;
+  height: 250px;
+  padding: 30px 20px;
+  margin-top: 100px;
+}
+
+.percent{
+  font-size: 30px;
+}
+
+.book{
+  padding: 1rem 1.5rem;
+}
+
+.block{
+  height: 300px;
+  width: 12.5%;
+  float: left;
+  background-color: white;
+}
+
+.feature{
+  height: 300px;
+  width: 25%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+  background-color: white;
+}
+
+section > h3{
+  padding: 20px 0;
+}
+
+.block2{
+  height: 400px;
+  float: left;
+  background-color: lightgray;
+  width: 20%;
+}
+
+.momentum{
+  background-color: lightgray;
+  float: left;
+  width: 30%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.momentum > h2{
+  font-size: 40px;
+}
+
+.momentum > p{
+  padding: 20px 0;
+}
+
+.read{
+  padding: 1rem 1.5rem;
+  background-color: black;
+  color: white;
+}
+
+.box{
+  border: 1px solid lightgray;
+  width: 400px;
+  height: 300px;
+  background-image: url(https://pbs.twimg.com/media/FLUCUe3XEAwVqJw?format=jpg&name=900x900);
+  background-size: cover;
+}
+
+.block3{
+  height: 400px;
+  width: 11%;
+  float: left;
+  background-color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.stylist1, .stylist2, .stylist3{
+  height: 400px;
+  width: 20%;
+  /* border: 1px solid black; */
+  float: left;
+  margin-left: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.stylist1 button, .stylist2 button, .stylist3 button{
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.stylist1{
+  background-image: url(https://pbs.twimg.com/media/FLUCUfiXEB42VCS?format=jpg&name=small);
+  background-size: cover;
+}
+
+.stylist2{
+  background-image: url(https://pbs.twimg.com/media/FLUCUgIX0AALBnI?format=jpg&name=small);
+  background-size: cover;
+}
+
+.stylist3{
+  background-image: url(https://pbs.twimg.com/media/FLUCfS2X0AEFgrj?format=jpg&name=small);
+  background-size: cover;
+}
+
+.offer{
+  height: 500px;
+  border: 1px solid black;
+  background-image: url(https://wallpaperaccess.com/full/1126574.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.offer > h2{
+  padding: 30px 0;
+}
+
+.offer button{
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: black;
+}
+
+.lookbook{
+  text-align: center;
+  margin: 20px;
+}
+
+.lookbook h2, .lookbook span{
+  padding-top: 5%;
+}
+
+.lookbook span{
+  padding-bottom: 2.5%;
+}
+
+.group1 {
+  height: 1100px;
+  width: 33.3333%;
+  float: left;
+}
+.group2 {
+  height: 1100px;
+  width: 33.3333%;
+  float: left;
+}
+.group3 {
+  height: 1100px;
+  width: 33.3333%;
+  float: left;
+}
+
+.model1{
+  height: 400px;
+  width: 90%;
+  margin: 5% 0 5% 10%;
+  background-image: url(https://www.teahub.io/photos/full/109-1098651_pin-wallpaper-designs-hair-salons-hdr-beauty-salon.jpg);
+  background-size: cover ;
+
+  background-repeat: no-repeat;
+}
+
+.model2{
+  height: 600px;
+  width: 90%;
+  margin: 5% 0 5% 10%;
+  background-image: url(https://www.teahub.io/photos/full/82-823585_long-hair-brunette-beautiful-girl-wallpaper-beautiful-girl.jpg);
+  background-size: cover;
+}
+
+.model3{
+  height: 600px;
+  width: 90%;
+  margin: 5%;
+  background-image: url(https://i.pinimg.com/736x/36/12/54/361254339e5e52dbc7fad800d7d02142.jpg);
+  background-size: cover;
+}
+
+.model4{
+  height: 400px;
+  width: 90%;
+  margin: 5%;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/465/109/68/4k-barbara-palvin-wallpaper-preview.jpg);
+  background-size: cover;
+}
+
+.model5{
+  height: 400px;
+  width: 90%;
+  margin: 5% 10% 5% 0%;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/601344bd6fabe44aa6031851/1611967626541-9P9EOVF6S0WRG23LWKH8/face.png);
+  background-size: cover;
+}
+
+.model6{
+  height: 600px;
+  width: 90%;
+  margin: 5% 10% 5% 0%;
+  background-image: url(https://w0.peakpx.com/wallpaper/260/402/HD-wallpaper-lisa-asian-band-beautiful-beauty-black-hair-blackpink-portrait-pretty-singer.jpg);
+  background-size: cover;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media only screen and (max-width: 800px){
+  .nav-menu{
+       position: fixed;
+       left: -100%;
+       top: 5rem;
+       flex-direction: column;
+       background-color: #fff;
+       width: 100%;
+       border-radius: 10px;
+       text-align: center;
+       transition: 0.3s;
+       box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active{
+       left: 0;
+  }
+
+  .nav-button{
+       display: none;
+  }
+
+  .header{
+       border-bottom: 1px solid black;
+  }
+
+  .hamburger {
+       display: block;
+       cursor: pointer;
+  }
+
+  .hamburger.active .bar.bar:neth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar.bar:neth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar.bar:neth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  main > section > h1 {
+    font-size: 70px;
+  }
+
+  main > section > p {
+    font-size: 15px;
+  }
+
+  .main {
+    background-position: right;
+  }
+
+  .block, .block2, .block3 {
+    display: none;
+  }
+
+  .feature {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+  }
+
+  .momentum {
+    width: 100%;
+  }
+
+  .stylist1, .stylist2, .stylist3 {
+    width: 90%;
+  }
+
+  .offer {
+    background-position: right;
+  }
+
+  .group1, .group2, .group3 {
+    width: 100%;
+  }
+} 
